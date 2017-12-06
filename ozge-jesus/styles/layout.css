@@ -1,0 +1,35 @@
+
+html, body, header {
+    display: block;
+    width: 100%;
+    
+}
+header.site-header {
+    margin-top: 0px;
+    display: inline-block;
+    
+}
+
+section.heading-group-h1 {
+    display:absolute;
+    float: left;
+    width: 50%;
+
+}
+nav.main-nav {
+    display:absolute;
+    float: right;
+    width: 50%;
+}
+    .main-nav ul li {
+    display: inline;
+}
+.hamburger {
+    
+    float:right;
+    margin-right: 2%;
+}
+
+main {
+    margin-top: 0px;
+}
