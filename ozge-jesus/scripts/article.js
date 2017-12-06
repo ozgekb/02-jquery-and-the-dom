@@ -15,7 +15,7 @@ Article.prototype.toHtml = function() {
   //It makes a full copy of the articles and all of its descendent elements.
 
   let $newArticle = $('article.template').clone();
-  
+
   if (!this.publishedOn) $newArticle.addClass('draft');
   $newArticle.attr('data-category', this.category);
 
@@ -26,6 +26,7 @@ Article.prototype.toHtml = function() {
       3. article title,
       4. article body, and
       5. publication date. */
+      
 
   // REVIEW: Display the date as a relative number of 'days ago'
   $newArticle.find('time').html('about ' + parseInt((new Date() - new Date(this.publishedOn))/60/60/24/1000) + ' days ago');
