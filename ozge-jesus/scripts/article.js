@@ -54,6 +54,11 @@ rawData.forEach(function(rawData) {
   articles.push(new Article(rawData));
 });
 
-for(let i = 0; i < articles.length; i++) {
-  $('#articles').append(articles[i].toHtml());
-}
+articles.forEach(function(articles){
+  $('#articles').append(articles.toHtml());
+});
+
+
+// for(let i = 0; i < articles.length; i++) {
+//   $('#articles').append(articles[i].toHtml());
+// }
